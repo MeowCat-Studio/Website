@@ -1,0 +1,58 @@
+body { margin: 0px; padding: 0px;padding-left: 7px; }
+div { margin: 0px; padding: 0px;list-style-type:none;} 
+dl { margin: 0px; padding: 0px; }
+ul { margin: 0px; padding: 0px; }
+li { margin: 0px; padding: 0px; }
+form { margin: 0px; padding: 0px; }
+li { list-style: none outside none; }
+input { font-family: inherit; font-size: inherit; font-weight: inherit; }
+body { font: 12px Tahoma,Helvetica,arial,sans-serif; vertical-align: middle; }
+a { color: #000; text-decoration: none; font-size: 12px; }
+
+
+a:hover { text-decoration: none; }
+html {}* {padding:0px;margin:0px;font-family:Arial,Helvetica,sans-serif;}
+input {solid 1px rgb(202,217,234);padding:3px 0px 3px 5px;}
+.o-input {padding:3px 4px;width:40px;border: 1px solid rgb(202,217,234);font-size:14px;margin-right:20px;}
+.dj_btns {font-size:12px;width:84px;height:26px;background:url('../images/btnnss.jpg') no-repeat scroll left top transparent;border-style:none;color:rgb(255,255,255);margin:0px 10px;}
+.j-input { border: 1px solid rgb(202,217,234); font-size: 1.7em; width: 250px; }
+.dj_btn { font-size: 12px; width: 64px; height: 26px; background: url('../images/btnns.jpg') no-repeat scroll left top transparent; border-style: none; color: rgb(255, 255, 255); margin: 0px 10px; }
+.htable {border:1px solid rgb(202,217,234);height:35px;line-height:35px;width:98%;vertical-align:middle;margin:10px;background-color:rgb(245,250,254);font-size:14px;font-weight:bold;}
+.htable span { font-size: 12px; color: rgb(255, 0, 0); }
+.butdiv { border: 1px solid rgb(202,217,234); height: 45px; line-height: 45px; width: 98%; vertical-align: middle; margin: 10px; background-color: rgb(245,250,254); text-align: center; }
+.butdiv input { margin: 10px; padding: 5px; font-size: 12px; vertical-align: middle; }
+.alldiv{border:1px solid #CAD9EA; width:98%; vertical-align:middle;margin:10px auto; border-bottom:none;overflow:hidden; zoom:1; }
+.divdl {height:30px;line-height:30px;padding-left:20px;vertical-align:middle;background-color:rgb(245,250,254);font-size:14px;font-weight:bold;}
+.unicom li { padding: 5px 0px 5px 80px; font-size: 1.5em; line-height: 1.5em; vertical-align: middle; font-weight: bold; border-bottom: 1px solid rgb(202,217,234); }
+.unicom a { margin: 10px; padding: 6px; border: 1px solid rgb(202,217,234); vertical-align: middle; font-size: 14px; text-align: center; }
+.beizhu li {font-size:14px;line-height:25px; padding: 5px 40px; vertical-align: middle; color: red; border-bottom: 1px solid rgb(202,217,234);text-indent:-1em;_text-indent:-2em;*text-indent:-2em; }
+.boxall { padding-top: 15px; padding-bottom: 15px; padding-right: 4px; width: 703px; }
+.boxall22 {border-style:dashed;border-color:rgb(200,102,38);padding-top:15px;padding-bottom:15px;padding-right:4px;width:694px;}
+.chaxun {border-collapse:collapse;border:solid 1px rgb(202,217,234);margin:10px;color:rgb(245,250,254);;vertical-align:middle;text-align:center}
+.chaxuntop {border-collapse:collapse;border:solid 1px rgb(202,217,234);background-color:#D4E6F7;color:rgb(245,250,254);;vertical-align:middle;text-align:center}
+.chaxunan {border-collapse:collapse;border:solid 1px rgb(202,217,234);color:rgb(245,250,254);;vertical-align:middle;text-align:center}
+.dayin {background-color:#fff;border:solid 1px rgb(202,217,234);color:#333;padding:2px 9px;text-align:center} 
+.css_body {font-family:Arial,Helvetica,sans-serif;font-size:12px;padding-right:12px;padding-left:12px;overflow-x:hidden;padding-bottom:10px;background-image:url('../images/pbg.gif');background-repeat:repeat-x;line-height:20px;color:#000;}
+.bodytitle {height:28px;clear:both;overflow:hidden;margin-top:8px;line-height:28px;}
+.bodytitleleft {height:28px;display:block;background:none repeat scroll 0% 0% rgb(0,0,0);float:right;padding-right:4px;}
+.bodytitletxt {height:28px;display:block;float:left;text-indent:16px;line-height:28px;letter-spacing:1px;font-weight:bold;color:rgb(0,0,0);font-size:14px;}
+.main_bleft {line-height:29px;padding-right:10px;font-weight:bold;letter-spacing:1px;background-color: rgb(202,217,234);color: #fff;}
+.main_kd_bleft {line-height:29px;padding-right:10px;font-weight:bold;letter-spacing:1px; height:20px;}
+.main_bright {text-align:left;line-height:29px;padding-left:12px;background-color:rgb(255,255,255);}
+.dj_btn2 {font-size:16px;width:150px;height:25px;background-image:url('../images/acc.png');color:rgb(255,255,255);border-style:none;font-weight:bold;margin-top:2px;}
+
+
+
+.boxall{padding-top:15px;padding-bottom:15px;padding-right:4px;*padding-top:15px;*padding-bottom:15px;*padding-right:4px;_padding-top:15px;_padding-bottom:15px;_padding-right:4px;width:703px}
+.boxall2{border-style: dashed;border-color: #c86626;padding-top: 15px;padding-bottom: 15px;padding-right: 2px;padding-left: 10px;*padding-top: 15px;*padding-bottom: 15px;*padding-right: 2px;*padding-left: 10px;_padding-top: 15px;_padding-bottom: 15px;_padding-right: 2px;_padding-left: 10px;width: 695px;}
+.pd{padding:10px}.biankuang{border: 1px solid rgb(202,217,234);}.beijing{background-color: rgb(245,250,254);}.dise{color:#000} .dise2{color:#3176b8}.juzhong{vertical-align:middle;text-align:center}.bianju{padding:10px 0px 10px 0px}
+
+.main_bleft2 {
+	height:30px;
+	line-height:29px;
+	padding-right:10px;
+	font-weight:bold;
+	color:#006699;
+}
+#u ul{padding-left:7px;}.tdhd{ height:28px;line-height:28px;font-size:14px;font-weight:bold;}
+#rblhlr,#rbltype,#rbld4,#RadioButtonList1,#RadioButtonList2 label{font-size:15px;padding-left:2px;padding-right:4px;}
