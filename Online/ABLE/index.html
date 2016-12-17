@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>愤怒的小鸟关卡编辑器v1.0c - 小喵工作室 - MeowCat Studio</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script type="application/javascript" src="js/blocks.js"></script>
+<script type="application/javascript" src="js/images.js"></script>
+<script type="application/javascript" src="js/able.js"></script>
+</head>
+<body onLoad="init()">
+<!-- 
+会提取到网页源码的，对对对就是你，要不要来我工作室玩玩？QQ群号：242553005
+-->
+<div id="loading" style="color: white;background-color: brown; border: solid; width: 100%; height: 20%">
+<h1>小喵正在玩命加载中，请稍候..</h1>
+</div>
+把反编译得到的lua关卡脚本粘贴到下面的文本框中，并点击“加载”按钮：<br/>
+<textarea id="txt" rows="10" cols="100">physicsToWorld = 20theme = "theme1"joints = {}birdCameraData = {    ipad = {        bottom = 122.18199920654,        left = -655.24298095703,        px = 48.054100036621,        py = -369.68798828125,        right = 1953.7199707031,        screenHeight = 768,        screenWidth = 1024,        sx = 0.72799998521805,        sy = 0.72799998521805,        top = -897.16101074219    },    iphone = {        bottom = 58.935001373291,        left = -627.74499511719,        px = 40.922298431396,        py = -355.47198486328,        right = 1921.3100585938,        screenHeight = 968,        screenWidth = 1280,        sx = 0.95712798833847,        sy = 0.95712798833847,        top = -861.15100097656    },    version = "0.02"}castleCameraData = {    ipad = {        bottom = 122.18199920654,        left = 547.12298583984,        px = 1250.4200439453,        py = -405.29098510742,        right = 1953.7199707031,        screenHeight = 768,        screenWidth = 1024,        sx = 0.72799998521805,        sy = 0.72799998521805,        top = -932.76397705078    },    iphone = {        bottom = 47.576000213623,        left = 583.97302246094,        px = 1245.1300048828,        py = -452.42401123047,        right = 1906.2900390625,        screenHeight = 968,        screenWidth = 1280,        sx = 0.96799999475479,        sy = 0.96799999475479,        top = -952.42401123047    },    version = "0.02"}counts = {    RedBird = 1,    YellowBird = 1,    WoodBlock9 = 2,    KingPiglette = 1}world = {    ground = {        angle = 0,        definition = "Ground",        name = "ground",        x = 55.188701629639,        y = 5    },    RedBird_1 = {        x = -35.44444444444444,        y = -1.3333333333333357,        name = "RedBird_1",        definition = "RedBird",        angle = 0    },    YellowBird_1 = {        x = -32.66666666666667,        y = -1.4444444444444429,        name = "YellowBird_1",        definition = "YellowBird",        angle = 0    },    WoodBlock9_1 = {        x = 62.111111111111114,        y = -2.1111111111111143,        name = "WoodBlock9_1",        definition = "WoodBlock9",        angle = 0    },    WoodBlock9_2 = {        x = 62.111111111111114,        y = -6.111111111111107,        name = "WoodBlock9_2",        definition = "WoodBlock9",        angle = 0    },    KingPiglette_1 = {        x = 62.22222222222222,        y = -11.666666666666664,        name = "KingPiglette_1",        definition = "KingPiglette",        angle = 0    }}    </textarea><br/>
+</div><p>缩放:</p>
+<input type="button" onClick="chgval('zoom',-1)" value="-" />
+<input id="zoom" type="text" value="6" size="3">
+<input type="button" onClick="chgval('zoom',1)" value="+" />
+<p>移动画布:</p>
+<input type="button" onClick="chgval('delta',-10)" value="<" />
+<input id="delta" type="text" value="330" size="3" />
+<input type="button" onClick="chgval('delta',10)" value=">" /><br/>
+<input type="button" onClick="levelData = parseLevel()" value="加载" />
+<input type="button" onClick="saveLevel();" value="保存修改" />
+<!-- 
+<input type="button" onClick="alert(help());" value="帮助！" /> 
+--><br/>
+<p>控制方法：<strong>单击：</strong>选取目标；<strong>右键单击拖动或[q]/[w]键：</strong>旋转目标；<strong>[d]键：</strong>复制目标；<strong>箭头键或鼠标单击拖动：</strong>移动目标；<strong>[j]/[r]键：</strong>对所选的2个对象进行关联/取消关联(joint)；<strong>ctrl+单击：</strong>多选时增加或取消选取所单击的对象；<strong>[delete]键：</strong>删除目标</p><br/>
+<div id="tscontainer" style="width:800px; overflow:scroll; background-color: silver">
+<canvas id="toolset" width="3800" height="160" style="background-color: silver">你当前使用的浏览器不能使用本工具，需要IE9（或以上版本）或Firefox、Chrome最新版等支持HTML5的浏览器。</canvas>
+</div><br/>
+<canvas oncontextmenu="return false;" id="canvas" width="800" height="480" style="background-color: white">&nbsp;</canvas><br/>    Copyright (C) 2014 - 2017 <a href="http://www.meowcat.tk/" target="_blank">MeowCat Studio</a> Powered by MlgmXyysd All Rights Reserved.<br/>    友情链接：<small><a href="http://tieba.baidu.com/f?kw=%B7%DF%C5%AD%B5%C4%D0%A1%C4%F1">愤怒的小鸟百度贴吧</a> <a href="http://tieba.baidu.com/f?kw=%E5%B0%8F%E5%96%B5%E5%B7%A5%E4%BD%9C%E5%AE%A4">小喵工作室百度贴吧</a></small><br>
+<!-- <strong>鸣谢：</strong> -->
+</body>
+</html>
