@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     line-height: 100%;
     text-transform: none;
-    text-align: center;
+    text-align: left;
     background-color: rgb(230,230,230);
 }
 input[type="range"] {
