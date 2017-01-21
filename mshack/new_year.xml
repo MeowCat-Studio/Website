@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!--
+	LoginGift 						新年登录奖励
+		price						补领费用(点券)
+
+		gift 						某日的奖励配置
+			day						日期，年月日拼起来的数字
+			itemid					礼包id（默认1个，时间永久，绑定，所以配置省略了，有需求再说）
+
+	-->
+	<LoginGift price="100" endTime="1487347199" giftdes="1月19号-2月17号 新年活动期间，每天登录可以领取豪华礼包1份！">
+		<gift id="0" day="20170119" itemid="0x13af8830"/>
+		<gift id="1" day="20170120" itemid="0x13af8830"/>
+		<gift id="2" day="20170121" itemid="0x13af8830"/>
+		<gift id="3" day="20170122" itemid="0x13af8830"/>
+		<gift id="4" day="20170123" itemid="0x13af8830"/>
+		<gift id="5" day="20170124" itemid="0x13af8830"/>
+		<gift id="6" day="20170125" itemid="0x13af8830"/>
+		<gift id="7" day="20170126" itemid="0x13af8830"/>
+		<gift id="8" day="20170127" itemid="0x13af8930"/>
+		<gift id="9" day="20170128" itemid="0x13af8a30"/>
+		<gift id="10" day="20170129" itemid="0x13af8b30"/>
+		<gift id="11" day="20170130" itemid="0x13af8c30"/>
+		<gift id="12" day="20170131" itemid="0x13af8830"/>
+		<gift id="13" day="20170201" itemid="0x13af8830"/>
+		<gift id="14" day="20170202" itemid="0x13af8830"/>
+		<gift id="15" day="20170203" itemid="0x13af8830"/>
+		<gift id="16" day="20170204" itemid="0x13af8830"/>
+		<gift id="17" day="20170205" itemid="0x13af8830"/>
+		<gift id="18" day="20170206" itemid="0x13af8830"/>
+		<gift id="19" day="20170207" itemid="0x13af8830"/>
+		<gift id="20" day="20170208" itemid="0x13af8830"/>
+		<gift id="21" day="20170209" itemid="0x13af8830"/>
+		<gift id="22" day="20170210" itemid="0x13af8830"/>
+		<gift id="23" day="20170211" itemid="0x13af8d30"/>
+		<gift id="24" day="20170212" itemid="0x13af8830"/>
+		<gift id="25" day="20170213" itemid="0x13af8830"/>
+		<gift id="26" day="20170214" itemid="0x13af8e30"/>
+		<gift id="27" day="20170215" itemid="0x13af8830"/>
+		<gift id="28" day="20170216" itemid="0x13af8830"/>
+		<gift id="29" day="20170217" itemid="0x13af8830"/>
+	</LoginGift>
+
+	<!--
+	 new:每系统收益点券数量达到，触发公告
+	     beginTime:红包开始发放的时间（唯一）
+	     endTime:红包领取的截止时间（红包之间的时间不能交叉）
+	     total:发放的点券总数
+	     userNum:发给多少人
+	     minGet:每个人至少获得多少点券(必须满足minGet*userNum<=total)
+	     maxGet:每个人最多获得多少点券(由于算法问题，要求满足max_get - total/userNum > total/userNum - min_get )
+	 配置最多32个
+	 -->
+	<LuckyMoney expLimit="776000" new="100" reddes="1月19日|1月27、28日|2月11日期间，每天下午13:30——13:45之间，服务器将派送300个红包，20级以上玩家，每人每号限抢1个，抢完即止！">
+	    <li beginTime="1484803800" endTime="1484804700" total="10000" userNum="300" minGet="9" maxGet="150"/>
+	    <li beginTime="1485495000" endTime="1485495900" total="18000" userNum="300" minGet="9" maxGet="150"/>
+		<li beginTime="1485581400" endTime="1485582300" total="18000" userNum="300" minGet="9" maxGet="150"/>
+		<li beginTime="1486791000" endTime="1486791900" total="18000" userNum="300" minGet="9" maxGet="150"/>
+	</LuckyMoney>
+	
+	<Instance instancedes="1月19号-2月17号 新年活动期间，美味岛、火山岛和浮空岛将有年兽出没，与好友组队进入击败年兽，将获得任务奖励-年兽礼包！" />
+	<!--
+	TurnTable					幸运转盘
+		price 					单次价格
+		ten_price 				十连抽价格
+		Discount				折扣活动，折扣最多8个，再多需要和程序提
+			id 					折扣id
+			startTime 			折扣开始时间戳
+			endTime 			折扣结束时间戳
+			value				折扣，例：9就是9折，8就是8折，实际点券数值向下取整，单次和十次的都打折
+		Pool					奖池
+			id   				奖池id
+			needConsume 		出发的需要消费（如5000为每消耗5000点券会触发1次）
+			item 				奖池内物品，奖池内物品最多16个，再多需要和程序提
+				itemid 			物品id
+				num 			物品数量
+				level   		物品等级
+				time 			物品时间
+				isBind 			是否绑定
+				rate			权重
+	-->
+	<TurnTable price="0" ten_price="0" tabledes="1月19号-2月17号 新年活动期间，消耗0点券参与抽取绝版珍惜礼包，机不可失！">
+		<Discount id="1" startTime="" endTime="" value=""/>
+		<Discount id="2" startTime="" endTime="" value=""/>
+		<Discount id="3" startTime="" endTime="" value=""/>
+
+		<Pool id="1" needConsume="0">
+			<item id="1" itemid="0x13402550" num="25" level="0" time="-1" isBind="1" rate="2500" name="极品香料"/>
+			<item id="2" itemid="0x13402550" num="10" level="0" time="-1" isBind="1" rate="2500" name="皇室香料"/>
+			<item id="3" itemid="0x13402550" num="5" level="0" time="-1" isBind="1" rate="2350" name="魔幻香料"/>
+			<item id="4" itemid="0x13b43430" num="1" level="0" time="-1" isBind="1" rate="1500" name="米苏幸运草箱"/>
+			<item id="5" itemid="0x13b43530" num="1" level="0" time="-1" isBind="1" rate="1000" name="米苏幸运卡包"/>
+			<item id="6" itemid="0x13b42530" num="1" level="0" time="-1" isBind="1" rate="35" name="鸡年卡片包"/>
+			<item id="7" itemid="0x13b42630" num="1" level="0" time="-1" isBind="1" rate="35" name="鸡年卡片初级技能包"/>
+			<item id="8" itemid="0x13b42730" num="1" level="0" time="-1" isBind="1" rate="30" name="鸡年卡片高级技能包"/>
+			<item id="9" itemid="0x13b42a30" num="1" level="0" time="-1" isBind="1" rate="25" name="鸡年卡片一转包"/>
+			<item id="10" itemid="0x13b42b30" num="1" level="0" time="-1" isBind="1" rate="10" name="鸡年卡片二转包"/>
+			<item id="11" itemid="0x13b42830" num="1" level="0" time="-1" isBind="1" rate="10" name="鸡年卡片终极技能包"/>
+			<item id="12" itemid="0x13b42930" num="1" level="0" time="-1" isBind="1" rate="5" name="鸡年卡片究级技能包"/>
+		</Pool>
+		<Pool id="2" needConsume="0">
+			<item id="1" itemid="0x13b42530" num="1" level="0" time="-1" isBind="1" rate="40" name="鸡年卡片包"/>
+			<item id="2" itemid="0x13b42630" num="1" level="0" time="-1" isBind="1" rate="35" name="鸡年卡片初级技能包"/>
+			<item id="3" itemid="0x13b42730" num="1" level="0" time="-1" isBind="1" rate="25" name="鸡年卡片高级技能包"/>
+		</Pool>
+		<Pool id="3" needConsume="0">
+			<item id="1" itemid="0x13b42b30" num="1" level="0" time="-1" isBind="1" rate="25" name="鸡年卡片二转包"/>
+			<item id="2" itemid="0x13b42a30" num="1" level="0" time="-1" isBind="1" rate="35" name="鸡年卡片一转包"/>
+			<item id="3" itemid="0x13b42830" num="1" level="0" time="-1" isBind="1" rate="30" name="鸡年卡片终极技能包"/>
+			<item id="4" itemid="0x13b42930" num="1" level="0" time="-1" isBind="1" rate="10" name="鸡年卡片究级技能包"/>
+		</Pool>
+
+	   <ShowList><!--左下角大奖展示，排序根据配置顺序-->
+			<item id="1" itemid="0x11130304" num="1" level="0" time="2592000" isBind="1"/>
+			<item id="2" itemid="0x111303e4" num="1" level="0" time="2592000" isBind="1"/>
+			<item id="3" itemid="0x111303c4" num="1" level="0" time="2592000" isBind="1"/>
+			<item id="4" itemid="0x11130364" num="1" level="0" time="2592000" isBind="1"/>
+			<item id="5" itemid="0x11110354" num="1" level="0" time="2592000" isBind="1"/>
+			<item id="6" itemid="0x12320110" num="1" level="0" time="-1" isBind="0"/>
+			<item id="7" itemid="0x12241b40" num="1" level="0" time="-1" isBind="1"/>
+			<item id="8" itemid="0x12241c40" num="1" level="0" time="-1" isBind="1"/>
+			<item id="9" itemid="0x12241d40" num="1" level="0" time="-1" isBind="1"/>
+			<item id="10" itemid="0x12241e40" num="1" level="0" time="-1" isBind="1"/>
+			<item id="11" itemid="0x12241f40" num="1" level="0" time="-1" isBind="1"/>
+			<item id="12" itemid="0x12241b30" num="1" level="0" time="-1" isBind="1"/>
+			<item id="13" itemid="0x12241c30" num="1" level="0" time="-1" isBind="1"/>
+			<item id="14" itemid="0x12241d30" num="1" level="0" time="-1" isBind="1"/>
+			<item id="15" itemid="0x12241e30" num="1" level="0" time="-1" isBind="1"/>
+			<item id="16" itemid="0x12241f30" num="1" level="0" time="-1" isBind="1"/>
+			<item id="17" itemid="0x12241b20" num="1" level="0" time="-1" isBind="1"/>
+			<item id="18" itemid="0x12241c20" num="1" level="0" time="-1" isBind="1"/>
+			<item id="19" itemid="0x12241d20" num="1" level="0" time="-1" isBind="1"/>
+			<item id="20" itemid="0x12241e20" num="1" level="0" time="-1" isBind="1"/>
+			<item id="21" itemid="0x12241f20" num="1" level="0" time="-1" isBind="1"/>
+			<item id="22" itemid="0x12241b10" num="1" level="0" time="-1" isBind="1"/>
+			<item id="23" itemid="0x12241c10" num="1" level="0" time="-1" isBind="1"/>
+			<item id="24" itemid="0x12241d10" num="1" level="0" time="-1" isBind="1"/>
+			<item id="25" itemid="0x12241e10" num="1" level="0" time="-1" isBind="1"/>
+			<item id="26" itemid="0x12241f10" num="1" level="0" time="-1" isBind="1"/>
+			<item id="27" itemid="0x13621072" num="1" level="0" time="-1" isBind="1"/>
+			<item id="28" itemid="0x13622072" num="1" level="0" time="-1" isBind="1"/>
+			<item id="29" itemid="0x13623072" num="1" level="0" time="-1" isBind="1"/>
+			<item id="30" itemid="0x13621073" num="1" level="0" time="-1" isBind="1"/>
+			<item id="31" itemid="0x13622073" num="1" level="0" time="-1" isBind="1"/>
+			<item id="32" itemid="0x13623073" num="1" level="0" time="-1" isBind="1"/>
+			<item id="33" itemid="0x13621074" num="1" level="0" time="-1" isBind="1"/>
+			<item id="34" itemid="0x13622074" num="1" level="0" time="-1" isBind="1"/>
+			<item id="35" itemid="0x13623074" num="1" level="0" time="-1" isBind="1"/>
+			<item id="36" itemid="0x13621075" num="1" level="0" time="-1" isBind="1"/>
+			<item id="37" itemid="0x13622075" num="1" level="0" time="-1" isBind="1"/>
+			<item id="38" itemid="0x13623075" num="1" level="0" time="-1" isBind="1"/>
+			<item id="39" itemid="0x13621076" num="1" level="0" time="-1" isBind="1"/>
+			<item id="40" itemid="0x13622076" num="1" level="0" time="-1" isBind="1"/>
+			<item id="41" itemid="0x13623076" num="1" level="0" time="-1" isBind="1"/>
+			<item id="42" itemid="0x13611072" num="1" level="0" time="-1" isBind="1"/>
+			<item id="43" itemid="0x13612072" num="1" level="0" time="-1" isBind="1"/>
+			<item id="44" itemid="0x13611073" num="1" level="0" time="-1" isBind="1"/>
+			<item id="45" itemid="0x13612073" num="1" level="0" time="-1" isBind="1"/>
+			<item id="46" itemid="0x13611074" num="1" level="0" time="-1" isBind="1"/>
+			<item id="47" itemid="0x13612074" num="1" level="0" time="-1" isBind="1"/>
+			<item id="48" itemid="0x13611075" num="1" level="0" time="-1" isBind="1"/>
+			<item id="49" itemid="0x13612075" num="1" level="0" time="-1" isBind="1"/>
+			<item id="50" itemid="0x13611076" num="1" level="0" time="-1" isBind="1"/>
+			<item id="51" itemid="0x13612076" num="1" level="0" time="-1" isBind="1"/>
+	   </ShowList>
+
+		<TableList><!--转盘展示，排序根据配置顺序-->
+			<item id="1" itemid="0x13b42930" num="1" level="0" time="-1" isBind="0" name="鸡年卡片究级技能包"/>
+			<item id="2" itemid="0x123400a0" num="10" level="0" time="-1" isBind="0" name="皇室香料"/>
+			<item id="3" itemid="0x13b42730" num="1" level="0" time="-1" isBind="0" name="鸡年卡片高级技能包"/>
+			<item id="4" itemid="0x13b43430" num="1" level="0" time="-1" isBind="0" name="米苏幸运草箱"/>
+			<item id="5" itemid="0x13b42a30" num="1" level="0" time="-1" isBind="0" name="鸡年卡片一转包"/>
+			<item id="6" itemid="0x12340090" num="25" level="0" time="-1" isBind="0" name="极品香料"/>
+			<item id="7" itemid="0x13b42530" num="1" level="0" time="-1" isBind="0" name="鸡年卡片包"/>
+			<item id="8" itemid="0x13b43530" num="1" level="0" time="-1" isBind="0" name="米苏幸运卡包"/>
+			<item id="9" itemid="0x13b42830" num="1" level="0" time="-1" isBind="0" name="鸡年卡片终极技能包"/>
+			<item id="10" itemid="0x123400c0" num="5" level="0" time="-1" isBind="0" name="魔幻香料"/>
+			<item id="11" itemid="0x13b42b30" num="1" level="0" time="-1" isBind="0" name="鸡年卡片二转包"/>
+			<item id="12" itemid="0x13b42630" num="1" level="0" time="-1" isBind="0" name="鸡年卡片初级技能包"/>
+		</TableList>
+		<!-- 转盘参数 time1=一连抽旋转时间 num1=一连抽旋转圈数 time2=十连抽旋转时间 num2=十连抽旋转圈数 -->
+		<Table time1="6" num1="8" time2="6" num2="8"/>
+	</TurnTable>		
+</root>
