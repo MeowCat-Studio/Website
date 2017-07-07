@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto/roboto-v15-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('../fonts/roboto/roboto-v15-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto/roboto-v15-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto/roboto-v15-latin-100.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto/roboto-v15-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto/roboto-v15-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto/roboto-v15-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto/roboto-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto/roboto-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto/roboto-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto/roboto-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto/roboto-v15-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/roboto/roboto-v15-latin-300italic.eot');
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+       url('../fonts/roboto/roboto-v15-latin-300italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto/roboto-v15-latin-300italic.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v15-latin-300italic.woff') format('woff'),
+       url('../fonts/roboto/roboto-v15-latin-300italic.ttf') format('truetype'),
+       url('../fonts/roboto/roboto-v15-latin-300italic.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v15-latin-regular.eot');
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto/roboto-v15-latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v15-latin-regular.woff') format('woff'),
+       url('../fonts/roboto/roboto-v15-latin-regular.ttf') format('truetype'),
+       url('../fonts/roboto/roboto-v15-latin-regular.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto/roboto-v15-latin-500.eot');
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto/roboto-v15-latin-500.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto/roboto-v15-latin-500.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v15-latin-500.woff') format('woff'),
+       url('../fonts/roboto/roboto-v15-latin-500.ttf') format('truetype'),
+       url('../fonts/roboto/roboto-v15-latin-500.svg#Roboto') format('svg');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto/roboto-v15-latin-700.eot');
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto/roboto-v15-latin-700.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/roboto/roboto-v15-latin-700.woff2') format('woff2'),
+       url('../fonts/roboto/roboto-v15-latin-700.woff') format('woff'),
+       url('../fonts/roboto/roboto-v15-latin-700.ttf') format('truetype'),
+       url('../fonts/roboto/roboto-v15-latin-700.svg#Roboto') format('svg');
+}
+
+/****************************************
+  ==== 2. GLOBAL
+****************************************/
+
+body {
+  font: 16px/135% 'Roboto', sans-serif; font-weight: 300; color: #5a5a5b; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+
+/****************************************
+  ==== 3. BASICS
+****************************************/
+
+h1, h2, h3 {
+  color: #222c37; font-weight: 700;
+}
+h1 {
+  font-size: 3em; line-height: 1em; margin: 0 0 20px 0;
+}
+h2 {
+  font-size: 1.875em; line-height: 1.2em; margin: 0 0 20px 0;
+}
+h3 {
+  font-size: 1.5625em; line-height: 1.2em; margin: 0 0 15px 0;
+}
+h4 {
+  font-size: 1.25em; line-height: 1.3em; font-weight: 500; margin: 0 0 10px 0;
+}
+p {
+  font-size: 1.0625em; line-height: 1.5em; margin: 0 0 15px 0;
+}
+small {
+  font-size: 0.875em; line-height: 1.3em; margin: 0 0 10px 0; display: block;
+}
+address {
+ font-size: 1.0625em; line-height: 1.5em; margin: 0 0 15px 0; font-weight: 300; white-space: pre-wrap;
+}
+
+/****************************************
+  ==== 4. LISTS
+****************************************/
+
+/* Unordered */
+ul {
+  list-style-type: none; margin: 0 0 15px 0;
+}
+ul li {
+  padding: 0 0 4px 20px; background: none; position: relative; font-size: 1.0625em; 
+}
+ul li:before {
+  content: "\2022"; font-size: 1.75em; position: absolute; top: 1px; left: 0; color: #5a5a5b;
+}
+ul li ul {
+  list-style-type: none; padding: 6px 0 0 0;
+}
+
+/*Ordered*/
+ol {
+  padding: 0 0 0 23px; margin: 0 0 15px 0; list-style-type: decimal;
+}
+ol li {
+  padding: 0 0 4px 0; font-size: 1.0625em;
+}
+ol li ol {
+  padding: 6px 0 0 23px; margin: 0;
+}
+ol.roman {
+  list-style-type: lower-roman;
+}
+ol.alpha {
+  list-style-type:lower-alpha;
+}
+
+/*Mixed*/
+ol ul {
+  list-style-type: none; padding: 6px 0 0 0; margin: 0;
+}
+ol ul li {
+  padding: 0 0 4px 20px; background: none; position: relative; font-size: 1.0625em;
+} 
+ol ul li:before {
+  content: "\2022"; font-size: 2.125em; position: absolute; top: 0; left: 0; color: #5a5a5b;
+}
+ul ol {
+  padding: 6px 0 0 23px; margin: 0;
+}
+ul ol li {
+  padding: 0 0 4px 0;
+}
+ul ol li:before {
+  display: none;
+}
+
+/****************************************
+  ==== 5. LINKS
+****************************************/
+
+a {
+  color: #00bcd4; text-decoration: none; outline: none; cursor: pointer; word-break: break-word;
+}
+a:hover {
+  color: #26c6da; text-decoration: underline;
+}
+a:focus, a:active {
+  color: #05a7bd; text-decoration: underline; outline: none;
+}
+
+/****************************************
+  ==== 6. STYLES & WEIGHTS
+****************************************/
+
+b, strong {
+  font-weight: 700;
+}
+i, em {
+  font-style: italic;
+}
+s {
+  text-decoration: line-through;
+}
+sup {
+  font-size: 0.75em; font-weight: 300; position: relative; top: 3px;
+}
+sub {
+  font-size: 0.75em; font-weight: 300; position: relative; bottom: 1px;
+}
