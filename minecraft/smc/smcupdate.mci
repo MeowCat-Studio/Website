@@ -1,0 +1,6 @@
+[SMCUpdate]
+forceupdate=0
+;0为非强制更新(可选更新)，1为强制更新(不更新不让你进游戏你来咬我啊233)。
+version=1.7.2.0
+vercode=1720
+updateinfo=非强制更新
