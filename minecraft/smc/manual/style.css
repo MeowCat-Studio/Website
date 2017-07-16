@@ -1,0 +1,41 @@
+body {
+	width:760px;
+	height:545px;
+}
+#center {
+	left:50%;
+	position:absolute;
+	top:50%
+}
+#dhtmlbook {
+	left:-380px;
+	visibility:hidden;
+	width:760px;
+	position:relative;
+	top:-305px;
+	height:545px
+}
+#txtbox {
+	font-size:.8em;
+	width:410px;
+	color:#aba193;
+	font-family:verdana;
+	position:absolute;
+	top:320px;
+	text-align:center
+}
+.page {
+	overflow:hidden;
+	width:50%;
+	cursor:pointer;
+	position:absolute;
+	height:100%
+}
+.right {
+	left:50%
+}
+.img {
+	width:200%;
+	position:absolute;
+	height:100%
+}
