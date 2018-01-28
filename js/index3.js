@@ -9,7 +9,7 @@ $(document).on('ready',function(){
   // Init
   frontpageHeader();
 
-  if(!touch && lang != 'cn'){
+  if(!touch){
     $('div.video iframe').attr('src',$('div.video iframe').attr('data-src'));
     setTimeout(function(){
       $('div.video iframe').removeClass('hidden');
